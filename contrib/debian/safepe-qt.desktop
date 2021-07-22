@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SafePe Core
+Comment=SafePe P2P Cryptocurrency
+Comment[de]=Verbinde mit dem SafePe peer-to-peer Netzwerk
+Comment[fr]=SafePe, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=SafePe, eşten eşe kriptografik sanal para birimi
+Exec=safepe-qt %u
+Terminal=false
+Type=Application
+Icon=safepe128
+MimeType=x-scheme-handler/safepe;
+Categories=Office;Finance;

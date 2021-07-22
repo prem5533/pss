@@ -1,0 +1,70 @@
+Source: safepe
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@safepe.org>
+Uploaders: Holger Schinzel <holger@safepe.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.47),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.47),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.47),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.47),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.47),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.47),
+ libminiupnpc8-dev | libminiupnpc-dev,
+ qt4-qmake, libqt4-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python,
+ libzmq3-dev
+Standards-Version: 3.9.2
+Homepage: https://www.safepe.org/
+Vcs-Git: git://github.com/safepepay/safepe.git
+Vcs-Browser: https://github.com/safepepay/safepe
+
+Package: safeped
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ SafePe is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. SafePe uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. SafePe Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, safeped, and the CLI tool
+ safepe-cli to interact with the daemon.
+
+Package: safepe-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ SafePe is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. SafePe uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. SafePe Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides SafePe-Qt, a GUI for SafePe based on Qt.
+
+Package: safepe-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ SafePe is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. SafePe uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. SafePe Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides safepe-tx, a command-line transaction creation
+ tool which can be used without a safepe daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

@@ -1,0 +1,6 @@
+usr/local/bin/safepe-qt usr/bin
+share/pixmaps/safepe32.xpm usr/share/pixmaps
+share/pixmaps/safepe16.xpm usr/share/pixmaps
+share/pixmaps/safepe128.png usr/share/pixmaps
+debian/safepe-qt.desktop usr/share/applications
+debian/safepe-qt.protocol usr/share/kde4/services/
